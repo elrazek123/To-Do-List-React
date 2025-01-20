@@ -115,6 +115,7 @@ function Tasks()
     if(!getElementOfTaskName.value||!getValueOfTaskContent.value)
     {
         window.alert("you must  fill in the input task name and the input task content");
+        return;
     }
     let object={};
     object.taskName=getElementOfTaskName.value;
