@@ -2,19 +2,19 @@ import { useEffect, useState } from 'react';
 import './tasks.css';
 import { nanoid } from 'nanoid';
 
-function showMesages(object)
-{
-    const meesage=new Toastify({
-        text:object.message,
-            backgroundColor:object.color,
-            close:true,
-            gravity:"top",
-            duration: 3000,
-            position: "center", // اتجاه الظهور: "left", "center" أو "right",
-            color:"white"
-    });
-    meesage.showToast();
-}
+// function showMesages(object)
+// {
+//     const meesage=new Toastify({
+//         text:object.message,
+//             backgroundColor:object.color,
+//             close:true,
+//             gravity:"top",
+//             duration: 3000,
+//             position: "center", // اتجاه الظهور: "left", "center" أو "right",
+//             color:"white"
+//     });
+//     meesage.showToast();
+// }
 function Tasks()
 {
     const [tasks,setTasks]=useState([]);
@@ -34,7 +34,7 @@ function Tasks()
         taskSNew.splice(TaskIndex,1);
         window.setTimeout(()=>
         {
-            showMesages({message:"the task is deleted sucessfully",color:"red"});
+            // showMesages({message:"the task is deleted sucessfully",color:"red"});
             window.setTimeout(()=>
             {
                 setTasks(taskSNew);
@@ -81,7 +81,7 @@ function Tasks()
             arrayNew[indexOfArray]=object;
             window.setTimeout(()=>
             {
-                showMesages({message:"the task is updated sucessfully",color:"yellow"});
+                // showMesages({message:"the task is updated sucessfully",color:"yellow"});
                 window.setTimeout(()=>
                 {
                     setTasks(arrayNew);
@@ -126,16 +126,16 @@ function Tasks()
     
     window.setTimeout(()=>
     {
-        let mesage=new Toastify({
-            text:"the task is added sucessfully",
-            backgroundColor:"green",
-            close:true,
-            gravity:"top",
-            duration: 3000,
-            position: "center", // اتجاه الظهور: "left", "center" أو "right",
-            color:"white"
-        });
-        mesage.showToast();
+        // let mesage=new Toastify({
+        //     text:"the task is added sucessfully",
+        //     backgroundColor:"green",
+        //     close:true,
+        //     gravity:"top",
+        //     duration: 3000,
+        //     position: "center", // اتجاه الظهور: "left", "center" أو "right",
+        //     color:"white"
+        // });
+        // mesage.showToast();
         window.setTimeout(()=>
         {
             setTasks(newOne);
