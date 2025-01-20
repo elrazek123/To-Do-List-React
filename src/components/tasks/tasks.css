@@ -1,0 +1,108 @@
+*
+{
+    padding: 0px;
+    margin: 0px;
+}
+nav
+{
+    text-align: center;
+    background-color: darkblue;
+    color: white;
+}
+header input
+{
+display: block;
+width: 80%;
+height: 100px;
+border-radius: 10px;
+text-align: center;
+font-weight: bolder;
+font-size: x-large;
+}
+header
+{
+    /* display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items:space-between;
+    align-content: space-around; */
+    background-color: orangered;
+    text-align: center;
+}
+
+header button
+{
+    display: block;
+    width: 60%;
+    background-color: darkblue;
+    color: white;
+    font-weight: bolder;
+    font-size: x-large;
+    border-radius: 10px;
+    height: 80px;
+    border-radius: 5px;
+}
+
+.icon
+{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+}
+section
+{
+    background-color: rgb(255, 255, 198);
+}
+article
+{
+    margin: 20px 0px;
+    background-color: darkblue;
+    color: whitesmoke;
+}
+.icon
+{
+    margin:10px 0px;
+}
+.icon i
+{
+    font-size: xx-large;
+    color:orangered;
+    margin: 0px 20px;
+
+}
+.icon h3
+{
+    margin: 0px 20px;
+}
+.buttons
+{
+    display: flex;
+    flex:row;
+    justify-content: center;
+    align-items: space-between;
+    align-content: space-between;
+}
+input
+{
+    border-radius: 20px;
+}
+.btn-primary,
+.btn-info,
+.btn-danger
+{
+height: 50px;
+}
+.mk,
+.mm
+{
+    height:60px;
+    text-align: center;
+    font-size: xx-large;
+    font-weight: bolder;
+}
+body
+{
+    background-color: blanchedalmond;
+}
